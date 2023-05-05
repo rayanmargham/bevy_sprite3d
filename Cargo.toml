@@ -8,9 +8,10 @@ license = "MIT"
 readme = "readme.md"
 repository = "https://github.com/FraserLee/bevy_sprite3d"
 keywords = ["gamedev", "bevy", "sprite", "3d"]
-
+[features]
+default = ["bevy/animation", "bevy/bevy_asset", "bevy/bevy_scene", "bevy/bevy_winit", "bevy/bevy_core_pipeline", "bevy/bevy_pbr", "bevy/bevy_gltf", "bevy/bevy_render", "bevy/bevy_sprite"]
 [dependencies]
-bevy = "0.10"
+bevy = {version = "^0.10", default-features = false}
 
 [dev-dependencies]
 rand = "0.8"
